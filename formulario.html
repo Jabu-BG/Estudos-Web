@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <div>
+    <label for="PNome">Primeiro Nome: </label><br>
+    <input type="text" id="PNome" name="PNome" required minlength="3" maxlength="10"> (Minimo de 3, Máximo de 10.)
+    </div>
+    <div>
+    <label for="SNome">Nome do Pai: </label><br>
+    <input type="text" id="SNome" name="SNome" requred minlenght="3" maxlength="10"> (Minimo de 3, Maximo de 10.) 
+    </div>
+    <div>
+    <label for="TNome">Nome da Mãe: </label><br>
+    <input type="text" id="TNome" name="TNome" requred minlenght="3" maxlength="10"> (Minimo de 3, Maximo de 10.) 
+    </div>
+    <br><br>
+    <label for="area_de_texto">Escreva sua Historia: </label><br>
+    <textarea id="area_de_texto" nome="caixa_de_texto" rows="20" cold="400">
+</textarea>
+<hr>
+<div>
+    <br><label for="PlataformaIn">Em qual Plataforma você está acessando?</label>
+    <input list="plataformas" id="PlataformaIn" name="plataforma" placeholder="plataforma">
+    
+    <datalist id="plataformas">
+        <option value="Windows">
+        <option value="Linux">
+        <option value="MacOS"><br>
+    </datalist>
+</div>
+<div>
+    <br><hr>
+    <br><label for="Animal"> Qual seu animal de estimação? </label>
+    <select name="Animal" id="Animal">
+        <option value="Cachorro"> Cachorro</option>
+        <option value="Gato">Gato</option>
+        <option value="Papagaio">Papagaio</option>
+        </select> 
+    <br><br><label for="NomeA">Qual o nome dele?</label>
+    <input type="text" id="NomeA" name="NomeA"> <br><br>
+</div>
+<div>
+    <hr>
+    <br><label for="times"> Qual o seu time? </label>
+    <select id="times">
+        <option>Nenhum dos Seguintes</option>
+        <optgroup label="Rio de Janeiro">
+            <option>Flamengo</option>
+            <option>Fluminense</option>
+            <option>Vasco</option>
+            <option>Botafogo</option>
+            </optgroup>
+            <optgroup label="São Paulo">
+            <option>São Paulo</option>
+        <option>Palmeiras</option>
+        <option>Santos</option>
+        <option>Corinthians</option>
+        </optgroup>
+        </select>
+        <label for="ortime">Outro Time:</label>
+        <input type="text" id="ortime" name="ortime">
+        <div>
+            <br><hr>
+            <br><label for="data">Quando você fez esse formulario? </label>
+            <input type="datatime" id="data" name="data" min="2025-09-15T:12:00" max="2025-12-31T23:00">
+        </div>
+    </select>
+</div>
+</form>
+</body>
+</html>
